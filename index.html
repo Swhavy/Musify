@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <script src="https://kit.fontawesome.com/61cdb5ea4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="music-app">
+        <div class="nav">
+            <nav>
+                <div class="bars"><i class="fa-solid fa-bars"></i> </div> 
+                <div class="back"><i class="fa-solid fa-angle-left"></i></div>
+            </nav>
+        </div>
+        <div class="image">
+            <img id="image" src="./image/113120-OOPA2J-931.jpg" width="200" height="200" >
+        </div>
+        <!-- <input type="file" id="fileInput" accept="audio/*"> -->
+        <div class="audio" id="audio">
+            <audio id="song">
+                <source src="./musics/01 - Whatcha Say - (Musicfire.in) - Copy - Copy.mp3"  type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="music-info">
+            <div class="music-name">
+                <h1 id="musicName">Last breath</h1>
+            </div>
+            <div class="artist">
+                <h2>Future</h2>
+            </div>
+            <div class="range">
+                <div class="playBackFunction">
+                    <i id="repeat" class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="progress">
+                    <input type="range" class="progressBar" id="progressBar" value="0" name="musicProgress" max="300">
+                </div>
+                <div class="duration">
+                    <span id="crntTime">0:00</span>/<span id="duration"></span>
+                </div>
+            </div>
+            <div class="music-cntrl">
+                <div class="skip-back"><i id="skip-backward" class="fa-solid fa-angles-left"></i></div>
+                <div class="play"><i id="play" class="fa-solid fa-play"></i></div>
+                <div class="pause"><i id="pause" class="fa-solid fa-pause"></i></div>
+                <div class="skip-forward"><i id="skip-forward" class="fa-solid fa-angles-right"></i></div>
+            </div>
+            <div class="volume">
+                <div class="vol">
+                    <input type="range" class="vol" id="vol" value="0">
+                    <div class="volInfo"></div>
+                </div>
+                <div class="volIcnon">
+                    <i id="volLow" class="fa-solid fa-volume-low"></i>
+                    <div class="mute"><i id="volMute" class="fa-solid fa-volume-mute"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+<script src="script.js"></script>
+</html>

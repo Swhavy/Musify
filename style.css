@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.279), rgba(40, 1, 1, 0.461)), url(./image/sam-quek-EZeA8GlL5Ts-unsplash.jpg);
+    background-size: cover;
+  /*   background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.music-app{
+    background: linear-gradient(cyan, magenta) ;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 705px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .back, nav .bars{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(189, 12, 12, 0.568);
+    margin-top: 10px;
+}
+
+.image{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.image img{
+    border-radius: 50%;
+    border: 10px solid #bc670b9a;
+   
+}
+
+.music-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.artist{
+    font-size: 16px;
+}
+
+.music-cntrl{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 80px;
+   /*  background-color: aquamarine; */
+}
+
+
+.skip-back, .skip-forward, .play, .pause{
+    transform: scale(2, 2);
+    background: linear-gradient(to left, rgba(255, 0, 0, 0.546), blue);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.skip-back:hover, .skip-forward:hover, .play:hover, .pause:hover{
+    transform: scale(2.3, 2.3);
+    box-shadow: 0px 0px 2px 2px #ff890398;
+}
+
+
+.play{
+    transform: scale(2.5, 2.5);
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.pause{
+    display: none;
+    transform: scale(2.5, 2.5);
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.audio{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    margin-top: 20px;
+}
+
+.range{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.duration{
+    margin-left: 30px;
+}
+
+input{
+    width: 280px;
+} 
+
+.vol{
+    width: 50px; 
+}
+
+/* .progressBar{
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 0, 0.422);
+    border-radius: 0px;
+    color: black;
+}
+ */
+
+.volIcon, .volume{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.vol{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.mute{
+    display: none;
+}
+
+.playBackFunction{
+    margin-right: 10px;
+}
+
+.playBackFunction:hover, .fa-bars:hover, .fa-angle-left:hover{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:  linear-gradient(to left, rgba(255, 0, 0, 0.669), blue);
+        background-clip: text;
+        background-size: cover; 
+        color: transparent;
+    border-radius: 50%;
+    transform: scale(1.1, 1.1);
+
+} 
+
+.playBackclck{
+    background:  linear-gradient(to left, rgba(255, 0, 0, 0.546), blue);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.546), blue); ;
+        background-clip: text;
+        background-size: cover; 
+        color: transparent;
+    border-radius: 50%;
+    transform: scale(1.1, 1.1);
+}
